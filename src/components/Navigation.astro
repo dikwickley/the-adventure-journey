@@ -11,7 +11,20 @@ const { pathname } = url;
       NAV_ITEMS.map((item) => {
         return (
           <li class={pathname === item.path ? 'active' : ''}>
-            <a href={item.path}>{item.title}</a>
+            <div class="dropdown">
+              <a href={item.path} class="dropbtn">
+                {item.title}{' '}
+              </a>
+              {item.dropDown != null ? (
+                <div class="dropdown-content">
+                  {item.dropDown.map((dropItem) => {
+                    return <a href={dropItem.link}>{dropItem.title}</a>;
+                  })}
+                </div>
+              ) : (
+                ''
+              )}
+            </div>
           </li>
         );
       })
@@ -29,7 +42,7 @@ const { pathname } = url;
         );
       })
     }
-    <li>
+    <!-- <li>
       <a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a>
     </li>
     <li>
@@ -40,6 +53,6 @@ const { pathname } = url;
     </li>
     <li>
       <a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a>
-    </li>
+    </li> -->
   </ul>
 </nav>

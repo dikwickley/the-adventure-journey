@@ -1,15 +1,39 @@
 export const NAV_ITEMS = [
   {
     path: '/',
-    title: 'This is Massively',
+    title: 'Home',
+    dropDown: null,
   },
   {
-    path: '/generic',
-    title: 'Generic Page',
+    path: '/rafting',
+    title: 'Rafting',
+    dropDown: [
+      {
+        link: '/rafting/day-trip',
+        title: 'Day Trip',
+      },
+      {
+        link: '/rafting/day-trip',
+        title: 'Overnight Trip',
+      },
+      {
+        link: '/rafting/day-trip',
+        title: 'Two Days program',
+      },
+      {
+        link: '/rafting/day-trip',
+        title: 'Three Days program',
+      },
+      {
+        link: '/rafting/river-expedition',
+        title: 'River Expedition',
+      },
+    ],
   },
   {
     path: '/elements',
     title: 'Elements Reference',
+    dropDown: null,
   },
 ];
 
@@ -37,8 +61,8 @@ export const SOCIAL_MEDIA_ITEMS = [
 ];
 
 export const SITE = {
-  title: 'Massively for Astro',
-  description: 'A free, fully responsive HTML5 + CSS3 site template, ported to Astro',
+  title: 'The Adventure Journy',
+  description: '',
   url: 'https://astro-massively.darko.io',
   githubUrl: 'https://github.com/DBozhinovski/astro-massively',
 };

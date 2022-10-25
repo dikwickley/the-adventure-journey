@@ -14,8 +14,7 @@ const featured = allPosts.shift();
 
 <Layout title={SITE.title} intro>
   <div id="main">
-    <!-- Featured Post -->
-    <PostPreview
+    <!-- <PostPreview
       title={featured?.frontmatter.title || ''}
       image={featured?.frontmatter.image || ''}
       date={new Date(featured?.frontmatter.pubDate)}
@@ -24,7 +23,6 @@ const featured = allPosts.shift();
       featured
     />
 
-    <!-- Posts -->
     <section class="posts">
       {
         allPosts.map((p) => (
@@ -39,6 +37,6 @@ const featured = allPosts.shift();
       }
     </section>
 
-    <Pagination />
+    <Pagination /> -->
   </div>
 </Layout>

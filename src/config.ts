@@ -31,10 +31,21 @@ export const NAV_ITEMS = [
     ],
   },
   {
-    path: '/elements',
-    title: 'Elements Reference',
+    path: '/bike-tour',
+    title: 'Bike Tour',
     dropDown: null,
   },
+  {
+    path: '/mtb',
+    title: 'MTB',
+    dropDown: null,
+  },
+
+  // {
+  //   path: '/elements',
+  //   title: 'Elements Reference',
+  //   dropDown: null,
+  // },
 ];
 
 export const SOCIAL_MEDIA_ITEMS = [
